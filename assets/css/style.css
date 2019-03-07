@@ -1,0 +1,68 @@
+*,
+*::before
+*::after {
+    box-sizing: bordex-box;
+}
+body{
+    margin: 0;
+
+}
+
+header{
+	margin: 0 auto;
+	max-width: 1366px;
+}
+
+.flex-container{
+  	display: flex;
+} 
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.navbar{
+  	display: flex;
+  	justify-content: space-between;
+} 
+.navbar ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.navbar li a{
+	text-decoration: none;
+	padding: 30px;
+}
+
+
+nav {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.hero{
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+
+button{
+  background-color: #10c9c3;
+  width: 180px;
+ }
+
+h1{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+/*
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;*/
