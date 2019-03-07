@@ -5,7 +5,6 @@
 }
 body{
     margin: 0;
-
 }
 
 header{
@@ -13,8 +12,10 @@ header{
 	max-width: 1366px;
 }
 
-.flex-container{
+.container{
   	display: flex;
+  	margin: 0 auto;
+  	max-width: 1366px;
 } 
 
 .logo{
@@ -22,19 +23,20 @@ header{
 	align-items: center;
 }
 
-.navbar{
+.main-navigation{
   	display: flex;
   	justify-content: space-between;
 } 
-.navbar ul{
+.main-navigation ul{
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 }
 
-.navbar li a{
+.main-navigation li a{
 	text-decoration: none;
 	padding: 30px;
+
 }
 
 
@@ -50,18 +52,52 @@ nav {
 
 
 button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 45px;
   background-color: #10c9c3;
-  width: 180px;
+  display: inline-block;
  }
 
 h1{
 	font-family: 'Montserrat', sans-serif;
 }
 
+.hero {
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .container {
+  justify-content: flex-end;
+  min-height: 100vh;
+  padding: 109px 0;
+}
+
+.hero .hero-content {
+  max-width: 480px;
+}
+
+.company-statistics{
+	background-color: #10c9c3;
+}
+
+
+.services .container{
+	flex-wrap: wrap;
+}
 
 
 
-
+.quote{
+	background-color: #10c9c3;
+}
 
 /*
 font-family: 'Nunito Sans', sans-serif;
