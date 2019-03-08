@@ -7,26 +7,39 @@ body{
     margin: 0;
 }
 
+
+/*--------------------
+ SECTION HEADER
+-----------------*/
+
 header{
 	margin: 0 auto;
-	max-width: 1366px;
+}
+
+header > div {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
 }
 
 .container{
-  	display: flex;
   	margin: 0 auto;
   	max-width: 1366px;
 } 
 
-.logo{
-	display: flex;
-	align-items: center;
+
+.flex{
+  display: flex;
 }
 
 .main-navigation{
-  	display: flex;
-  	justify-content: space-between;
+  	justify-content: flex-end;	
 } 
+
 .main-navigation ul{
 	list-style-type: none;
 	display: flex;
@@ -36,7 +49,6 @@ header{
 .main-navigation li a{
 	text-decoration: none;
 	padding: 30px;
-
 }
 
 
@@ -45,8 +57,11 @@ nav {
 	font-weight: 500;
 }
 
+/*--------------------
+ SECTION HERO
+-----------------*/
+
 .hero{
-	max-width: 1366px;
 	margin: 0 auto;
 }
 
@@ -76,7 +91,7 @@ h1{
 
 .hero .container {
   justify-content: flex-end;
-  min-height: 100vh;
+  min-height: auto;
   padding: 109px 0;
 }
 
@@ -84,19 +99,52 @@ h1{
   max-width: 480px;
 }
 
+/*--------------------
+ SECTION ABOUT US
+-----------------*/
+.about-us .container{
+  flex-direction: column;
+  align-items: center;
+}
+
+.content{
+  width: 50%;
+}
+/*--------------------
+ SECTION STATISTICS
+-----------------*/
+
+
 .company-statistics{
 	background-color: #10c9c3;
 }
 
+/*--------------------
+ SECTION SERVICES
+-----------------*/
 
 .services .container{
 	flex-wrap: wrap;
 }
 
+.box{
+  width: 25%;
+}
 
+.service-box{
+  width: 25%;
+}
+/*--------------------
+ SECTION QUOTE
+-----------------*/
 
 .quote{
 	background-color: #10c9c3;
+}
+
+.quote .container{
+  flex-direction: column;
+  align-items: center;
 }
 
 /*
