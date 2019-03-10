@@ -66,7 +66,7 @@ nav {
 }
 
 
-button{
+.button{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 0.75rem;
@@ -74,13 +74,19 @@ button{
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 25px 45px;
+  padding: 15px 35px;
   background-color: #10c9c3;
   display: inline-block;
  }
 
 h1{
 	font-family: 'Montserrat', sans-serif;
+}
+
+.text{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #787878;
+
 }
 
 .hero {
@@ -91,8 +97,8 @@ h1{
 
 .hero .container {
   justify-content: flex-end;
-  min-height: auto;
-  padding: 109px 0;
+  min-height: 40vh;
+  padding: 150px;
 }
 
 .hero .hero-content {
@@ -102,21 +108,68 @@ h1{
 /*--------------------
  SECTION ABOUT US
 -----------------*/
-.about-us .container{
+.about {
   flex-direction: column;
   align-items: center;
+  padding: 64px 0;
 }
 
 .content{
-  width: 50%;
+  width: 40%;
+  text-align: center;
 }
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*--------------------
  SECTION STATISTICS
 -----------------*/
 
-
 .company-statistics{
 	background-color: #10c9c3;
+}
+.box{
+  display: flex;
+  width: 25%;
+}
+
+.icon{
+  padding: 70px 20px 70px 0;
+}
+
+
+.info{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  padding: 60px 20px 70px 0;
+}
+/*--------------------
+GALLERY
+-----------------*/
+.gallery-grid{
+  max-width: 100%;
+}
+.pictures{
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 25%;
+}
+
+.gallery-btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #8e8e8e;
+  text-transform: uppercase;
+
+  
 }
 
 /*--------------------
@@ -125,27 +178,60 @@ h1{
 
 .services .container{
 	flex-wrap: wrap;
-}
-
-.box{
-  width: 25%;
+  padding: 60px 0;
 }
 
 .service-box{
-  width: 25%;
+  width: 20%;
+  padding: 20px 25px;
+  text-align: center;
 }
+
+.service-box h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #191919;
+}
+.service-box p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #787878;
+}
+
 /*--------------------
  SECTION QUOTE
 -----------------*/
 
 .quote{
 	background-color: #10c9c3;
+  padding: 64px 0;
+}
+.quote .container{
+    flex-direction: column;
+    align-items: center;
 }
 
-.quote .container{
-  flex-direction: column;
-  align-items: center;
+.quote-content{
+  width: 50%;
+  text-align: center;
+  padding: 80px;
+  color: #fff;
 }
+.quote-content h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.quote-content p{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.90rem;
+}
+
+
 
 /*
 font-family: 'Nunito Sans', sans-serif;
