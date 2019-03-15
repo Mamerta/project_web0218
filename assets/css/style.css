@@ -1,8 +1,9 @@
 *,
-*::before
+*::before,
 *::after {
-    box-sizing: bordex-box;
+    box-sizing: border-box;
 }
+
 body{
     margin: 0;
 }
@@ -88,7 +89,7 @@ h1{
 }
 
 .hero {
-  background-image: url(../images/hero.jpg);
+  background-image: url(../images/optimazed/macbook-min.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -154,15 +155,16 @@ GALLERY
 }
 
 .pictures img{
+  display: block;
   width: 100%;
 }
+.picture-box{
+  max-width: 25%;
+}
+
  .hidden{
   display: none;
  }
-
-.box{
-  max-width: 100%;
-}
 
 .gallery-btn{
   background-color: #dddddd;
@@ -191,7 +193,7 @@ GALLERY
 }
 
 .service-box{
-  width: 20%;
+  width: 25%;
   padding: 20px 25px;
   text-align: center;
 }
@@ -223,7 +225,7 @@ GALLERY
 }
 
 .quote-content{
-  width: 50%;
+  width: 60%;
   text-align: center;
   padding: 80px;
   color: #fff;
@@ -290,12 +292,18 @@ CONTACT
 }
 
  input[type=text] {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.94rem;
   border: none;
   width: 100%;
   margin-top: 10px;
 }
 
 textarea[name=message]{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.94rem;
   border: none;
   padding: 10px;
   width: 100%;
@@ -318,6 +326,7 @@ textarea[name=message]{
   background-color: #10c9c3;
   display: inline-block;
   margin: 25px 0;
+  border: 1px solid transparent;
 }
 
 /*--------------------
@@ -357,6 +366,6 @@ footer {
 
 
 
-/*
+/*font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;*/
