@@ -158,13 +158,26 @@ GALLERY
   display: block;
   width: 100%;
 }
+
 .picture-box{
   max-width: 25%;
 }
-
  .hidden{
   display: none;
  }
+
+.hidden1{
+  display: none;
+}
+
+.hidden.show{
+  display: block;
+}
+
+.gallery-btn.hidden.show{
+  display: flex;
+  justify-content: center;
+}
 
 .gallery-btn{
   background-color: #dddddd;
