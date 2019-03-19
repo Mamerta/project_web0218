@@ -36,13 +36,18 @@ header {
 }
 
 .main-navigation{
-  	justify-content: flex-end;	
+  display: flex;
+  align-items: center;
 } 
+
+.main-navigation i{
+  display: none;
+}
 
 .main-navigation ul{
 	list-style-type: none;
 	display: flex;
-	flex-direction: row;
+  
 }
 
 .main-navigation li a{
@@ -100,9 +105,7 @@ h1{
   padding: 150px;
 }
 
-.hero .hero-content {
-  max-width: 480px;
-}
+
 
 /*--------------------
  SECTION ABOUT US
@@ -345,13 +348,14 @@ textarea[name=message]{
 /*--------------------
 FOOTER
 -----------------*/
+
 footer {
   background-color: #141414;
 }
 
 .footer-box {
   color: #bcbcbc;
-  margin: 50px;
+  width: 20%;  
 }
 
 .footer-box h2{
@@ -378,7 +382,69 @@ footer {
 }
 
 
-
-/*font-family: 'Montserrat', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;*/
+/* Responsive styles
+================================================== */
+/* Small Devices, Tablets */
+@media (min-width : 768px) and (max-width: 991px) {
+      .hero .hero-content {
+        background: rgba(255, 255, 255, 0.4);
+        padding: 15px;
+      }
+      .main-navigation i{
+        display: block;
+      }
+      .content{
+        width: 80%;
+      }
+      .statistics{
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 50%;
+        padding-left: 20px;
+      } 
+      .pictures{
+        flex-wrap: wrap;
+      }
+      .picture-box {
+        max-width: 50%;
+      }
+      .service-box{
+        width: 50%;
+      }
+      .quote-content{
+        width: 100%;
+      }
+}
+/* Extra Small Devices, Phones */ 
+@media (min-width : 480px) and (max-width:767px){
+      .hero .hero-content {
+        background: rgba(255, 255, 255, 0.4);
+        padding: 15px;
+      }
+      .main-navigation i{
+        display: block;
+      }
+      .content{
+        width: 80%;
+      }
+      .statistics{
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 50%;
+        padding-left: 20px;
+      } 
+      .pictures{
+        flex-wrap: wrap;
+      }
+      .picture-box {
+        max-width: 100%;
+      }
+      .service-box{
+        width: 50%;
+      }
+      .quote-content{
+        width: 100%;
+      }
+}

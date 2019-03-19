@@ -10,9 +10,9 @@ $(document).ready(function(){
 	});
 });
 
-
 // $(document).ready(function(){
-// 				$('.click-hide').click(function(){
-// 					this.remove();	
-// 				});
+// 	$('.nav-list').click(function(e){
+// 		$('.hidden').toggleClass('show');
+// 			e.preventDefault();
+// 	});
 // });
