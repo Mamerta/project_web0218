@@ -40,14 +40,16 @@ header {
   align-items: center;
 } 
 
-.main-navigation i{
+.toggle-btn{
   display: none;
 }
+.nav-list{
+  display: none;
+  list-style-type: none;
+}
 
-.main-navigation ul{
-	list-style-type: none;
-	display: flex;
-  
+.nav-list.show{
+  display: flex;
 }
 
 .main-navigation li a{
@@ -390,7 +392,7 @@ footer {
         background: rgba(255, 255, 255, 0.4);
         padding: 15px;
       }
-      .main-navigation i{
+      .toggle-btn{
         display: block;
       }
       .content{
@@ -422,7 +424,7 @@ footer {
         background: rgba(255, 255, 255, 0.4);
         padding: 15px;
       }
-      .main-navigation i{
+      .toggle-btn{
         display: block;
       }
       .content{

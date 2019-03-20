@@ -1,5 +1,14 @@
 "use strict";
 
+// Menu burger
+
+$(document).ready(function(){
+	$('.toggle-btn').click(function(){
+		$('.nav-list').toggleClass('show');
+	});
+});
+
+
 // Image gallery burger - show more, show less
 
 $(document).ready(function(){
@@ -9,10 +18,3 @@ $(document).ready(function(){
 			e.preventDefault();
 	});
 });
-
-// $(document).ready(function(){
-// 	$('.nav-list').click(function(e){
-// 		$('.hidden').toggleClass('show');
-// 			e.preventDefault();
-// 	});
-// });
